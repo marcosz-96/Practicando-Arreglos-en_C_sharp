@@ -135,18 +135,19 @@ namespace Practicando_Arrays__Arreglos_1
             numEntero[4] = 5;
 
             Console.WriteLine($"Los valores dentro del arreglo son:"); /*{numEntero[0]}, {numEntero[1]}, {numEntero[2]}, {numEntero[3]}, {numEntero[4]}");*/
-            
+            /*
             for (int n = 0; n < numEntero.Length; n++)
             {
                 Console.WriteLine( numEntero[n]);
             }
+            
 
             //Ejercicio 2: Carga de Edades Dinámicas
             /* Descripcion; Pide al usuario que indique cuantas edades cargará
                Crea un arreglo para almacenarlas que se ajuste a las dimensiones
                Muestra las edades cargadas
             */
-
+            
             int total = 0;
             int ingresaEdad;
             int[] edades;
@@ -165,7 +166,7 @@ namespace Practicando_Arrays__Arreglos_1
             {
                 Console.WriteLine($"Las edades ingresadas en indice {i} es: {edades[i]}");
             }
-
+            
 
             //Ejercicio 3: Calcular sumatoria
             /*Descripción; A la solución creada en el ejercicio 2, mostrar al final la sumatorio total de las edades ingresadas*/
@@ -176,14 +177,14 @@ namespace Practicando_Arrays__Arreglos_1
             }
 
             Console.WriteLine($"\nEl resultado de la suma de las edades es: {total}\n");
-       
+            
 
             //Ejercicio 4: Arreglo en paralelo 
             /*Descripcion; Crear un arreglo para almacenar 5 estudiantes y otro para sus edades
               cargar los arreglos con nombres y edades
               Muestra en pantalla el nombre del estudiante y su edad, una por linea
             */
-
+            
             
             string[] estudiante;
             estudiante = new string[5];
@@ -207,7 +208,7 @@ namespace Practicando_Arrays__Arreglos_1
             {
                 Console.WriteLine($"El nombre del alumno es {estudiante[e]} y su edad es de {edadEstud[e]}");
             }
-
+            
 
             //NUEVOS EJERCICIOS CON ARREGLOS: PRACTICA!
 
@@ -218,7 +219,7 @@ namespace Practicando_Arrays__Arreglos_1
               Luego, cambia el nombre de la segunda posición (nombres[1]) por otro nombre ingresado por el usuario 
               muestra el arreglo resultante
              */
-
+            
             string[] nombre;
             nombre = new string[3];
         
@@ -315,7 +316,7 @@ namespace Practicando_Arrays__Arreglos_1
             }
 
             Console.WriteLine($"Las edades son: {edad[0]}, {edad[1]}, {edad[2]}, {edad[3]}, {edad[4]}");
-
+            
 
             //Ejercicio 1.4: Carga y Despliegue de Calificaciones
 
@@ -329,7 +330,7 @@ namespace Practicando_Arrays__Arreglos_1
             {
                 Console.WriteLine($"La calificación es: {calificaciones[i]}");
             }
-
+            
 
             //Ejercicio 1.5: Carga y Despliegue de N calificaciones
 
@@ -355,7 +356,7 @@ namespace Practicando_Arrays__Arreglos_1
             {
                 Console.WriteLine($"La nota ingresada es: {notas[x]}");
             }
-
+            
 
             //Ejercicio 1.6: Lista de Precios con Descuento
 
@@ -363,7 +364,6 @@ namespace Practicando_Arrays__Arreglos_1
             Recorrer el arreglo y cargar los precios.
             Una vez finalizado, aplicar un descuento del 10% a cada precio.
             Muestra los precios finales.*/
-
             
             int nPrecios;
             double[] precios;
@@ -386,12 +386,43 @@ namespace Practicando_Arrays__Arreglos_1
                 double precioConDescuento = precios[p] - descuento;
                 Console.WriteLine($"El precio con descuento es: {precioConDescuento}");
             }
+            
 
+            //Ejercicio 1.7: Multiplicación de Elementos Pares
 
+            /*Descripción: Crea un arreglo de N números. 
+            Recorrer el arreglo y cargar los numeros.
+            Multiplica por 3 todos los números que estén en posiciones pares del arreglo (0, 2, 4, etc)
+            Muestra el arreglo resultante. */
 
+            int cantNumX, ingNum;
+            
+            Console.Write("Ingrese la cantidad de números que desea guardar: ");
+            cantNumX = int.Parse(Console.ReadLine());
 
+            int[] numerosX = new int[cantNumX];
 
+            for (int c = 0; c < cantNumX; c++)
+            {
+                Console.Write($"Ingrese el número {c + 1}: ");
+                ingNum = int.Parse(Console.ReadLine());
 
+                if (ingNum % 2 == 0)
+                {
+                    numerosX[c] = ingNum * 3;
+                }
+                else
+                {
+                    numerosX[c] = ingNum;
+                }
+            }
+
+            Console.WriteLine("El arreglo final es: ");
+
+            for (int c = 0; c < cantNumX; c++)
+            {
+                Console.WriteLine($"número en el índice {c} = {numerosX[c]}");
+            }
 
 
 
