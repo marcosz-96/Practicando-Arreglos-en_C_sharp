@@ -128,30 +128,30 @@ namespace Practicando_Arrays__Arreglos_1
             */
             int[] numEntero;
             numEntero = new int[5];
-            numEntero[0] = 1;  
-            numEntero[1] = 2;   
+            numEntero[0] = 1;
+            numEntero[1] = 2;
             numEntero[2] = 3;
             numEntero[3] = 4;
             numEntero[4] = 5;
 
             Console.WriteLine($"Los valores dentro del arreglo son:"); /*{numEntero[0]}, {numEntero[1]}, {numEntero[2]}, {numEntero[3]}, {numEntero[4]}");*/
-            
+
             for (int n = 0; n < numEntero.Length; n++)
             {
-                Console.WriteLine( numEntero[n]);
+                Console.WriteLine(numEntero[n]);
             }
-            
+
 
             //Ejercicio 2: Carga de Edades Dinámicas
             /* Descripcion; Pide al usuario que indique cuantas edades cargará
                Crea un arreglo para almacenarlas que se ajuste a las dimensiones
                Muestra las edades cargadas
             */
-            
+
             int xtotal = 0;
             int ingresaEdad;
             int[] xedades;
-           
+
             Console.Write("\nIngrese el número de edades que desea cargar: ");
             ingresaEdad = int.Parse(Console.ReadLine());
 
@@ -166,7 +166,7 @@ namespace Practicando_Arrays__Arreglos_1
             {
                 Console.WriteLine($"Las edades ingresadas en indice {i} es: {xedades[i]}");
             }
-            
+
 
             //Ejercicio 3: Calcular sumatoria
             /*Descripción; A la solución creada en el ejercicio 2, mostrar al final la sumatorio total de las edades ingresadas
@@ -177,13 +177,13 @@ namespace Practicando_Arrays__Arreglos_1
             }
 
             Console.WriteLine($"\nEl resultado de la suma de las edades es: {xtotal}\n");
-            
+
 
             //Ejercicio 4: Arreglo en paralelo 
             /*Descripcion; Crear un arreglo para almacenar 5 estudiantes y otro para sus edades
               cargar los arreglos con nombres y edades
               Muestra en pantalla el nombre del estudiante y su edad, una por lina*/
-            
+
             string[] estudiante;
             estudiante = new string[5];
 
@@ -206,7 +206,7 @@ namespace Practicando_Arrays__Arreglos_1
             {
                 Console.WriteLine($"El nombre del alumno es {estudiante[e]} y su edad es de {edadEstud[e]}");
             }
-            
+
 
             //NUEVOS EJERCICIOS CON ARREGLOS: PRACTICA!
 
@@ -217,10 +217,10 @@ namespace Practicando_Arrays__Arreglos_1
               Luego, cambia el nombre de la segunda posición (nombres[1]) por otro nombre ingresado por el usuario 
               muestra el arreglo resultante
              */
-            
+
             string[] nombre;
             nombre = new string[3];
-        
+
             string nuevoNombre = "";
 
             Console.WriteLine("\nIngrese el primer nombre: ");
@@ -240,7 +240,7 @@ namespace Practicando_Arrays__Arreglos_1
 
             Console.WriteLine($"El nombre ingresado es: {nombre[1]}");
             Console.WriteLine($"\nLos nombres ingresados son: {nombre[0]}, {nombre[1]} y {nombre[2]}");
-            
+
 
 
             //Ejercicio 1.2: Precios con modificación directa
@@ -268,7 +268,7 @@ namespace Practicando_Arrays__Arreglos_1
 
             Console.WriteLine($"\nEl precio N°2 es {xprecio[1]} y su valor incrementado un 15% es: {xprecio[1] * 15 / 100 + xprecio[1]}");
             Console.WriteLine($"El precio N°4 es {xprecio[3]} y su valor incrementado un 20% es: {xprecio[3] * 20 / 100 + xprecio[3]}");
-            
+
 
 
             //Ejercicio 1.3: Reemplazo de edades
@@ -314,7 +314,7 @@ namespace Practicando_Arrays__Arreglos_1
             }
 
             Console.WriteLine($"Las edades son: {edad[0]}, {edad[1]}, {edad[2]}, {edad[3]}, {edad[4]}");
-            
+
 
             //Ejercicio 1.4: Carga y Despliegue de Calificaciones
 
@@ -323,12 +323,12 @@ namespace Practicando_Arrays__Arreglos_1
             Muestrar el arreglo resultante por consola (recorrer con for)
             */
             int[] calificaciones = { 45, 56, 32, 90, 100 };
-            
+
             for (int i = 0; i < calificaciones.Length; i++)
             {
                 Console.WriteLine($"La calificación es: {calificaciones[i]}");
             }
-            
+
 
             //Ejercicio 1.5: Carga y Despliegue de N calificaciones
 
@@ -354,7 +354,7 @@ namespace Practicando_Arrays__Arreglos_1
             {
                 Console.WriteLine($"La nota ingresada es: {xnotas[x]}");
             }
-            
+
 
             //Ejercicio 1.6: Lista de Precios con Descuento
 
@@ -385,7 +385,7 @@ namespace Practicando_Arrays__Arreglos_1
                 double precioConDescuento = precios[p] - descuento;
                 Console.WriteLine($"El precio con descuento es: {precioConDescuento}");
             }
-            
+
 
             //Ejercicio 1.7: Multiplicación de Elementos Pares
 
@@ -396,7 +396,7 @@ namespace Practicando_Arrays__Arreglos_1
             */
 
             int cantNumX;
-            
+
             Console.Write("Ingrese la cantidad de números que desea guardar: ");
             cantNumX = int.Parse(Console.ReadLine());
 
@@ -407,7 +407,7 @@ namespace Practicando_Arrays__Arreglos_1
                 Console.Write($"Ingrese el número {c + 1}: ");
                 numerosX[c] = int.Parse(Console.ReadLine());
             }
-            
+
             for (int c = 0; c < cantNumX; c++)
             {
                 if (c % 2 == 0) //Verificamos si la posición del arreglo es par
@@ -422,7 +422,7 @@ namespace Practicando_Arrays__Arreglos_1
             {
                 Console.WriteLine($"Posición {c}: {numerosX[c]}");
             }
-            
+
 
 
             //Ejercicio 1.8: Reemplazo de valores Negativos 
@@ -459,7 +459,7 @@ namespace Practicando_Arrays__Arreglos_1
             {
                 Console.WriteLine($"Posición {l}: {numNeg[l]}");
             }
-            
+
 
 
             //Ejercicio 1.9: Notas y Estudiantes
@@ -469,7 +469,7 @@ namespace Practicando_Arrays__Arreglos_1
             Permite al usuario ingresar los nombres de tres estudiantes y sus respectivas notas. 
             Luego, cambia la nota del segundo estudiante (notas[1]) a 10 (como si fuera una corrección). 
             Muestra los nombres y sus notas correspondientes.
-            */ 
+            */
 
             int[] notas = new int[3];
 
@@ -499,7 +499,7 @@ namespace Practicando_Arrays__Arreglos_1
             {
                 Console.WriteLine($"\nLas siguientes notas son: {nombres[s]} nota: {notas[s]}");
             }
-            
+
 
 
             //Ejercicio 1.10: Precios y Descuentos
@@ -536,15 +536,107 @@ namespace Practicando_Arrays__Arreglos_1
             descuentos[3] = int.Parse(Console.ReadLine());
 
             //Se realiza el descuento en el precio indicado
-            double descuentoPrecio2 = precio[2] * descuentos[2] / 100;
-            double precio2ConDescuento = precio[2] - descuentoPrecio2;
+            double descuentoPrecio3 = precio[2] * descuentos[2] / 100;
+            double precio3ConDescuento = precio[2] - descuentoPrecio3;
 
             for (int v = 0; v < precio.Length; v++)
             {
                 Console.WriteLine($"Los precios son: {precio[v]}");
-                
+
             }
-            Console.WriteLine($"El valor con descuento en el precio n°3 es: {precio2ConDescuento}");
+            Console.WriteLine($"El valor con descuento en el precio n°3 es: {precio3ConDescuento}");
+
+
+            //A modo de repaso: repasamos como hacer recorridos en arreglos con los bubles FOREACH y WHILE
+
+            //Recorriendo arreglos con el bucle FOREACH:
+
+            /*El bucle foreach una manera más simplificada y segura de recorrer un arreglo, itera sobre cada elemento del arreglo
+            lo que reduce la posiblidad de errores relacionados con índices fuera del arreglo.
+            El foreach itera sobre cada valor en los arreglos "numeros" y "frutas", y en cada ciclo,
+            las variables "numero" y "fruta" toman el valor el siguiente elemento del arreglo.*/
+            //Recorremos un arreglo de enteros
+            int[] numeros = { 899, 90, 12, 87, 00, 01 };
+
+            foreach ( int numero in numeros )
+            {
+                Console.WriteLine($"El número es: {numero}");
+            }
+
+            //En el siguiente ejemplo recorremos el arreglo de enteros y sumamos sus valores
+            int suma = 0;
+            foreach (int numero in numeros)
+            {
+                suma += numero;
+            }
+
+            Console.WriteLine($"la suma de los numeros es: {suma}");
+
+            //Recorremos un arreglo de cadena
+            string[] frutas = { "Pera", "Ananá", "Naranja" };
+
+            foreach (string fruta in frutas)
+            {
+                Console.WriteLine($"La fruta es: {frutas}");
+            }
+
+            //En el siguiente ejemplo recorremos un arreglos de caracteres y contamos las vocales
+            char[] letras = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'o', 'v', 'u' };
+            int contadorVocales = 0;
+
+            foreach (char letra in letras)
+            {
+                if ("aeiou".Contains(letra)) //Contains es un método de la clase String en C# que se utiliza para determinar si una cadena de texto(en este caso, "aeiou") contiene una subcadena o carácter específico.
+                {
+                    contadorVocales++;
+                }
+            }
+
+            Console.WriteLine($"El número de vocales es: {contadorVocales}");
+
+            //En el siguiente ejemplo verificamos si el caracter es true o false para la condición buscada
+            char caracter = 'e';
+
+            if ("aeiou".Contains(caracter))
+            {
+                Console.WriteLine("La letra es una vocal");
+            }
+            else
+            {
+                Console.WriteLine("La letra no es una vocal");
+            }
+
+            //En el siguiente ejemplo cargamos y calculamos el promedio de las calificaciones
+            int[] calificacionEnNota = { 45, 56, 90, 89, 32 }; //creamos el arreglo
+            int sumaNota = 0;
+            //Ahora recorremos el arreglo y sumamos las calificacioes
+            for (int cn = 0; cn < calificacionEnNota.Length; cn++)
+            {
+                sumaNota += calificacionEnNota[cn];
+            }
+            //Calculamos el promedio
+            double promedio = (double)sumaNota / calificacionEnNota.Length;
+            //Mostramos el resultado final
+            Console.WriteLine($"El promedio de las calificaiones es: {promedio}");
+ 
+
+            //Recorriendo arreglos con el bucle WHILE:
+
+            /*El bucle while ofrece una alternativa flexible para recorrer un arreglo, ideal cuando la 
+            condición de parada no depende exclusivamente del tamaño del arreglo. Sin embargo, su uso 
+            en este contexto es menos común que for y foreach.
+            En este ejemplo, el bucle while funciona de manera similar al for, pero puede ofrecer más 
+            flexibilidad en situaciones donde se necesite manipular la condición de salida del bucle de 
+            forma dinámica*/
+
+            int[] valorX = { 1, 2, 3, 4, 5, 6 };
+            int q = 0;
+
+            while ( q < valorX.Length )
+            {
+                Console.WriteLine($"El valor es: {valorX[q]}");
+                q++;
+            }
         }
     }
 }
